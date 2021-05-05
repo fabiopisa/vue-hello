@@ -11,9 +11,14 @@
 <body>
   
   <div id="root">
-    <h1 :class="myClass">{{messaggio}}</h1>
+    <h1 :class="myClass" >{{messaggio}}</h1>
     <button @click="changeClass('red')">Clicca x Rosso</button>
     <button @click="changeClass('green')">Clicca x Verde</button>
+    <input type="text" placeholder="scegli in colore" v-model="myImput" @keyup.enter="enterEvent">
+
+    <div class="img">
+      <img :src="image" alt="">
+    </div>
   </div>
 
   <script src="assets/js/script.js"></script>

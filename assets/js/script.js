@@ -10,12 +10,17 @@ const root = new Vue({
 
   data: {
     messaggio:'Ciao Vue.. eccomi qui!',
-    myClass:''
+    myImput:'',
+    myClass:'',
+    image:'assets/img/im10.jpg'
   },
 
   methods:{
     changeClass(style){
-      this.myClass = style
+      this.myClass = style 
+    },
+    enterEvent(){
+      this.myClass = this.myImput;
     }
   }
 
